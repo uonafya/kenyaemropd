@@ -7,7 +7,7 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.kenyakeypop;
+package org.openmrs.module.kenyaemropd;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -16,7 +16,7 @@ import org.openmrs.module.BaseModuleActivator;
 /**
  * This class contains the logic that is run every time this module is either started or shutdown
  */
-public class KenyakeypopActivator extends BaseModuleActivator {
+public class KenyaemropdActivator extends BaseModuleActivator {
 	
 	private Log log = LogFactory.getLog(this.getClass());
 	
@@ -24,14 +24,14 @@ public class KenyakeypopActivator extends BaseModuleActivator {
 	 * @see #started()
 	 */
 	public void started() {
-		log.info("Started Kenyakeypop");
+		log.info("Started Kenyaemropd");
 	}
 	
 	/**
 	 * @see #shutdown()
 	 */
 	public void shutdown() {
-		log.info("Shutdown Kenyakeypop");
+		log.info("Shutdown Kenyaemropd");
 	}
 	
 }

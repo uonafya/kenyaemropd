@@ -23,19 +23,27 @@
   		    http://www.springframework.org/schema/util
   		    http://www.springframework.org/schema/util/spring-util-3.0.xsd">
 
-    <context:component-scan base-package="org.openmrs.module.kenyakeypop" />
+    <context:component-scan base-package="org.openmrs.module.kenyaemropd" />
+
+    <bean id="kenyaemropd.app.kenyaemropd.home" factory-bean="kenyacore.appFactoryBean" factory-method="createInstance">
+        <constructor-arg value="kenyaemropd.home" />
+        <constructor-arg value="OPD" />
+        <constructor-arg value="kenyaemropd/opdHome.page" />
+        <constructor-arg value="kenyaemropd:apps/opd.png" />
+        <constructor-arg value="2000" />
+    </bean>s
 
     <!-- Wraps KenyakeypopService methods in DB transactions and OpenMRS interceptors,
     which set audit info like dateCreated, changedBy, etc.-->
-    <bean id="kenyakeypop.KenyakeypopService"
+    <bean id="kenyaemropd.KenyaemropdService"
             class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
         <property name="transactionManager">
             <ref bean="transactionManager" />
         </property>
         <property name="target">
-            <bean class="org.openmrs.module.kenyakeypop.api.impl.KenyakeypopServiceImpl">
+            <bean class="org.openmrs.module.kenyaemropd.api.impl.KenyaemropdServiceImpl">
                 <property name="dao" >
-                    <bean class="org.openmrs.module.kenyakeypop.api.dao.KenyakeypopDao">
+                    <bean class="org.openmrs.module.kenyaemropd.api.dao.KenyaemropdDao">
                         <property name="sessionFactory">
                             <ref bean="sessionFactory" />
 
@@ -52,13 +60,13 @@
         </property>
     </bean>
 
-    <!-- Adds KenyakeypopService to OpenMRS context so it can be accessed
-    calling Context.getService(KenyakeypopService.class) -->
+    <!-- Adds KenyaemropdService to OpenMRS context so it can be accessed
+    calling Context.getService(KenyaemropdService.class) -->
     <bean parent="serviceContext">
         <property name="moduleService">
             <list>
-                <value>org.openmrs.module.kenyakeypop.api.KenyakeypopService</value>
-                <ref bean="kenyakeypop.KenyakeypopService" />
+                <value>org.openmrs.module.kenyaemropd.api.KenyaemropdService</value>
+                <ref bean="kenyaemropd.KenyaemropdService" />
             </list>
         </property>
     </bean>

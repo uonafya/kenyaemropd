@@ -7,14 +7,15 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.kenyakeypop.api;
+package org.openmrs.module.kenyaemropd;
 
-import org.openmrs.api.OpenmrsService;
+import org.springframework.stereotype.Component;
 
 /**
- * The main service of this module, which is exposed for other modules. See
- * moduleApplicationContext.xml on how it is wired up.
+ * Contains module's config.
  */
-public interface KenyakeypopService extends OpenmrsService {
+@Component("kenyaemropd.KenyaemropdConfig")
+public class KenyaemropdConfig {
 	
+	public final static String MODULE_PRIVILEGE = "Kenyaemropd Privilege";
 }

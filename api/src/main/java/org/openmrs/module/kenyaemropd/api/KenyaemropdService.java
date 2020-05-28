@@ -7,20 +7,14 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.kenyakeypop.api.dao;
+package org.openmrs.module.kenyaemropd.api;
 
-import org.hibernate.SessionFactory;
+import org.openmrs.api.OpenmrsService;
 
-public class KenyakeypopDao {
-	
-	private SessionFactory sessionFactory;
-	
-	public SessionFactory getSessionFactory() {
-		return sessionFactory;
-	}
-	
-	public void setSessionFactory(SessionFactory sessionFactory) {
-		this.sessionFactory = sessionFactory;
-	}
+/**
+ * The main service of this module, which is exposed for other modules. See
+ * moduleApplicationContext.xml on how it is wired up.
+ */
+public interface KenyaemropdService extends OpenmrsService {
 	
 }

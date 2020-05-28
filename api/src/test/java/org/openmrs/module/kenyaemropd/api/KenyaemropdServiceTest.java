@@ -7,7 +7,7 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.kenyakeypop.api;
+package org.openmrs.module.kenyaemropd.api;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -15,20 +15,20 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.openmrs.api.UserService;
-import org.openmrs.module.kenyakeypop.api.dao.KenyakeypopDao;
-import org.openmrs.module.kenyakeypop.api.impl.KenyakeypopServiceImpl;
+import org.openmrs.module.kenyaemropd.api.dao.KenyaemropdDao;
+import org.openmrs.module.kenyaemropd.api.impl.KenyaemropdServiceImpl;
 
 /**
  * This is a unit test, which verifies logic in KenyakeypopService. It doesn't extend
  * BaseModuleContextSensitiveTest, thus it is run without the in-memory DB and Spring context.
  */
-public class KenyakeypopServiceTest {
+public class KenyaemropdServiceTest {
 	
 	@InjectMocks
-	KenyakeypopServiceImpl basicModuleService;
+	KenyaemropdServiceImpl basicModuleService;
 	
 	@Mock
-	KenyakeypopDao dao;
+	KenyaemropdDao dao;
 	
 	@Mock
 	UserService userService;

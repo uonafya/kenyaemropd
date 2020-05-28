@@ -7,15 +7,20 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.kenyakeypop;
+package org.openmrs.module.kenyaemropd.api.dao;
 
-import org.springframework.stereotype.Component;
+import org.hibernate.SessionFactory;
 
-/**
- * Contains module's config.
- */
-@Component("kenyakeypop.KenyakeypopConfig")
-public class KenyakeypopConfig {
+public class KenyaemropdDao {
 	
-	public final static String MODULE_PRIVILEGE = "Kenyakeypop Privilege";
+	private SessionFactory sessionFactory;
+	
+	public SessionFactory getSessionFactory() {
+		return sessionFactory;
+	}
+	
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+	
 }

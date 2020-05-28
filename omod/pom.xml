@@ -3,14 +3,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.openmrs.module</groupId>
-		<artifactId>kenyakeypop</artifactId>
+		<artifactId>kenyaemropd</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>kenyakeypop-omod</artifactId>
+	<artifactId>kenyaemropd-omod</artifactId>
 	<packaging>jar</packaging>
-	<name>Kenyakeypop OMOD</name>
-	<description>Omod submodule for Kenyakeypop</description>
+	<name>kenyaemropd OMOD</name>
+	<description>Omod submodule for kenyaemropd</description>
 
 	<dependencies>
 		<!-- Begin OpenMRS modules -->

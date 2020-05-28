@@ -7,31 +7,29 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.kenyakeypop;
+package org.openmrs.module.kenyaemropd;
 
 import org.openmrs.BaseOpenmrsData;
 import org.openmrs.User;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 
 /**
  * Please note that a corresponding table schema must be created in liquibase.xml.
  */
-//Uncomment 2 lines below if you want to make the Item class persistable, see also KenyakeypopDaoTest and liquibase.xml
-//@Entity(name = "kenyakeypop.Item")
-//@Table(name = "kenyakeypop_item")
+//Uncomment 2 lines below if you want to make the Item class persistable, see also KenyaemropdDaoTest and liquibase.xml
+//@Entity(name = "kenyaemropd.Item")
+//@Table(name = "kenyaemropd_item")
 public class Item extends BaseOpenmrsData {
 	
 	@Id
 	@GeneratedValue
-	@Column(name = "kenyakeypop_item_id")
+	@Column(name = "kenyaemropd_item_id")
 	private Integer id;
 	
 	@ManyToOne

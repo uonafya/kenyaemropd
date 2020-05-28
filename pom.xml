@@ -9,28 +9,29 @@
     </parent>
 
 	<groupId>org.openmrs.module</groupId>
-	<artifactId>kenyakeypop</artifactId>
+	<artifactId>kenyaemropd</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Kenyakeypop</name>
-	<description>OpenMRS based module for Kenya Key Population</description>
+	<name>kenyaemropd</name>
+	<description>OpenMRS based module for KenyaEMR OPD</description>
 	<url>https://wiki.openmrs.org/x/FQ4z</url>
 
 	<developers>
 		<developer>
-			<name>Palladium Developers</name>
+			<name>HealthIT Developers</name>
 		</developer>
 	</developers>
 
 	<organization>
-		<name>OpenMRS</name>
-		<url>http://openmrs.org</url>
+		<name>HealthIT</name>
+		<url>https://healthit.uonbi.ac.ke/</url>
 	</organization>
 
 	<scm>
-		<connection>scm:git:git@github.com:openmrs/openmrs-module-prep.git</connection>
-		<developerConnection>scm:git:git@github.com:openmrs/openmrs-module-prep.git</developerConnection>
-		<url>https://github.com/openmrs/openmrs-module-prep/</url>
+		<connection>scm:git:https://github.com/uonafya/kenyaemropd.git</connection>
+		<developerConnection>scm:git:https://github.com/uonafya/kenyaemropd.git</developerConnection>
+		<url>https://github.com/uonafya/kenyaemropd.git</url>
+		<tag>HEAD</tag>
 	</scm>
 
 	<modules>

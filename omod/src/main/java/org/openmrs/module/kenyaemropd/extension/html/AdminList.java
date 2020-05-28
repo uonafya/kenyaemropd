@@ -7,7 +7,7 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.kenyakeypop.extension.html;
+package org.openmrs.module.kenyaemropd.extension.html;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,7 +17,7 @@ import org.openmrs.module.web.extension.AdministrationSectionExt;
 
 /**
  * This class defines the links that will appear on the administration page under the
- * "kenyakeypop.title" heading. This extension is enabled by defining (uncommenting) it in the
+ * "kenyaemropd.title" heading. This extension is enabled by defining (uncommenting) it in the
  * config.xml file.
  */
 public class AdminList extends AdministrationSectionExt {
@@ -33,7 +33,7 @@ public class AdminList extends AdministrationSectionExt {
 	 * @see org.openmrs.module.web.extension.AdministrationSectionExt#getTitle()
 	 */
 	public String getTitle() {
-		return "kenyakeypop.title";
+		return "kenyaemropd.title";
 	}
 	
 	/**
@@ -43,7 +43,7 @@ public class AdminList extends AdministrationSectionExt {
 		
 		Map<String, String> map = new HashMap<String, String>();
 		
-		map.put("module/kenyakeypop/kenyakeypop.form", "kenyakeypop.title");
+		map.put("module/kenyaemropd/kenyaemropd.form", "kenyaemropd.title");
 		
 		return map;
 	}

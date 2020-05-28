@@ -7,25 +7,23 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.kenyakeypop.api.impl;
+package org.openmrs.module.kenyaemropd.api.impl;
 
-import org.openmrs.api.APIException;
 import org.openmrs.api.UserService;
 import org.openmrs.api.impl.BaseOpenmrsService;
-import org.openmrs.module.kenyakeypop.Item;
-import org.openmrs.module.kenyakeypop.api.KenyakeypopService;
-import org.openmrs.module.kenyakeypop.api.dao.KenyakeypopDao;
+import org.openmrs.module.kenyaemropd.api.KenyaemropdService;
+import org.openmrs.module.kenyaemropd.api.dao.KenyaemropdDao;
 
-public class KenyakeypopServiceImpl extends BaseOpenmrsService implements KenyakeypopService {
+public class KenyaemropdServiceImpl extends BaseOpenmrsService implements KenyaemropdService {
 	
-	KenyakeypopDao dao;
+	KenyaemropdDao dao;
 	
 	UserService userService;
 	
 	/**
 	 * Injected in moduleApplicationContext.xml
 	 */
-	public void setDao(KenyakeypopDao dao) {
+	public void setDao(KenyaemropdDao dao) {
 		this.dao = dao;
 	}
 	

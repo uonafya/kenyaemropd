@@ -7,7 +7,7 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.kenyakeypop.api.dao;
+package org.openmrs.module.kenyaemropd.api.dao;
 
 import org.junit.Test;
 import org.junit.Ignore;
@@ -21,10 +21,10 @@ import org.springframework.beans.factory.annotation.Autowired;
  * standardTestDataset.xml in openmrs-api. All test methods are executed in transactions, which are
  * rolled back by the end of each test method.
  */
-public class KenyakeypopDaoTest extends BaseModuleContextSensitiveTest {
+public class KenyaemropdDaoTest extends BaseModuleContextSensitiveTest {
 	
 	@Autowired
-	KenyakeypopDao dao;
+	KenyaemropdDao dao;
 	
 	@Autowired
 	UserService userService;
