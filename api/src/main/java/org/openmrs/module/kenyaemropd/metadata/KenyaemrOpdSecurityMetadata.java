@@ -13,7 +13,7 @@ import static org.openmrs.module.metadatadeploy.bundle.CoreConstructors.role;
  */
 @Component
 @Requires(org.openmrs.module.kenyaemr.metadata.SecurityMetadata.class)
-public class KenyaemropdSecurityMetadata extends AbstractMetadataBundle {
+public class KenyaemrOpdSecurityMetadata extends AbstractMetadataBundle {
 	
 	public static class _Privilege {
 		

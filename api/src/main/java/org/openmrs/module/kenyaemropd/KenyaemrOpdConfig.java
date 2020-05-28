@@ -14,8 +14,8 @@ import org.springframework.stereotype.Component;
 /**
  * Contains module's config.
  */
-@Component("kenyaemropd.KenyaemropdConfig")
-public class KenyaemropdConfig {
+@Component("kenyaemropd.KenyaemrOpdConfig")
+public class KenyaemrOpdConfig {
 	
 	public final static String MODULE_PRIVILEGE = "Kenyaemropd Privilege";
 }

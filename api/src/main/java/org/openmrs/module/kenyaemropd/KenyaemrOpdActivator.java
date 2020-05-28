@@ -16,7 +16,7 @@ import org.openmrs.module.BaseModuleActivator;
 /**
  * This class contains the logic that is run every time this module is either started or shutdown
  */
-public class KenyaemropdActivator extends BaseModuleActivator {
+public class KenyaemrOpdActivator extends BaseModuleActivator {
 	
 	private Log log = LogFactory.getLog(this.getClass());
 	
@@ -24,14 +24,14 @@ public class KenyaemropdActivator extends BaseModuleActivator {
 	 * @see #started()
 	 */
 	public void started() {
-		log.info("Started Kenyaemropd");
+		log.info("Started Kenyaemr OPD");
 	}
 	
 	/**
 	 * @see #shutdown()
 	 */
 	public void shutdown() {
-		log.info("Shutdown Kenyaemropd");
+		log.info("Shutdown Kenyaemr OPD");
 	}
 	
 }
