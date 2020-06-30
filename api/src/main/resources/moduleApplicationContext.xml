@@ -31,25 +31,18 @@
         <constructor-arg value="patientqueueapp/opdQueue.page" />
         <constructor-arg value="kenyaemropd:apps/opd.png" />
         <constructor-arg value="2000" />
-    </bean>s
+    </bean>
 
-    <!-- Wraps KenyakeypopService methods in DB transactions and OpenMRS interceptors,
+    <!-- Wraps PatientqueuappService methods in DB transactions and OpenMRS interceptors,
     which set audit info like dateCreated, changedBy, etc.-->
     <bean id="kenyaemropd.KenyaemropdService"
-            class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+          class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
         <property name="transactionManager">
             <ref bean="transactionManager" />
         </property>
         <property name="target">
             <bean class="org.openmrs.module.kenyaemropd.api.impl.KenyaemropdServiceImpl">
-                <property name="dao" >
-                    <bean class="org.openmrs.module.kenyaemropd.api.dao.KenyaemropdDao">
-                        <property name="sessionFactory">
-                            <ref bean="sessionFactory" />
-
-                        </property>
-                    </bean>
-                </property>
+                <property name="dao" ref="kenyaemropd.KenyaemropdDao" />
             </bean>
         </property>
         <property name="preInterceptors">
@@ -60,8 +53,6 @@
         </property>
     </bean>
 
-    <!-- Adds KenyaemropdService to OpenMRS context so it can be accessed
-    calling Context.getService(KenyaemropdService.class) -->
     <bean parent="serviceContext">
         <property name="moduleService">
             <list>

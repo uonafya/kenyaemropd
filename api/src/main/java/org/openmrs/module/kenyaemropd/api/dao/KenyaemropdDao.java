@@ -10,7 +10,9 @@
 package org.openmrs.module.kenyaemropd.api.dao;
 
 import org.hibernate.SessionFactory;
+import org.springframework.stereotype.Repository;
 
+@Repository("kenyaemropd.KenyaemropdDao")
 public class KenyaemropdDao {
 	
 	private SessionFactory sessionFactory;

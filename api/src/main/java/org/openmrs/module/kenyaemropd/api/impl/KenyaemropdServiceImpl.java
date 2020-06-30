@@ -18,19 +18,10 @@ public class KenyaemropdServiceImpl extends BaseOpenmrsService implements Kenyae
 	
 	KenyaemropdDao dao;
 	
-	UserService userService;
-	
 	/**
 	 * Injected in moduleApplicationContext.xml
 	 */
 	public void setDao(KenyaemropdDao dao) {
 		this.dao = dao;
-	}
-	
-	/**
-	 * Injected in moduleApplicationContext.xml
-	 */
-	public void setUserService(UserService userService) {
-		this.userService = userService;
 	}
 }

@@ -1,5 +1,6 @@
 package org.openmrs.module.kenyaemropd.metadata;
 
+import org.openmrs.module.kenyaemr.metadata.SecurityMetadata;
 import org.openmrs.module.metadatadeploy.bundle.AbstractMetadataBundle;
 import org.openmrs.module.metadatadeploy.bundle.Requires;
 import org.springframework.stereotype.Component;
@@ -33,7 +34,6 @@ public class KenyaemrOpdSecurityMetadata extends AbstractMetadataBundle {
 		
 		install(privilege(_Privilege.APP_OPD_MODULE_APP, "Able to access KenyaEMR OPD module features"));
 		install(role(_Role.APPLICATION_OPD_MODULE, "Can access KenyaEMR OPD module App",
-		    idSet(org.openmrs.module.kenyaemr.metadata.SecurityMetadata._Role.API_PRIVILEGES_VIEW_AND_EDIT),
-		    idSet(_Privilege.APP_OPD_MODULE_APP)));
+		    idSet(SecurityMetadata._Role.API_PRIVILEGES_VIEW_AND_EDIT), idSet(_Privilege.APP_OPD_MODULE_APP)));
 	}
 }
