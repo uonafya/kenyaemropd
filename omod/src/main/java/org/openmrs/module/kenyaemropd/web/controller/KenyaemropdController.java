@@ -29,7 +29,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * 'module/${rootArtifactid}/${rootArtifactid}Link.form'.
  */
 @Controller("${rootrootArtifactid}.KenyaemropdController")
-@RequestMapping(value = "module/${rootArtifactid}/${rootArtifactid}.form")
+//@RequestMapping(value = "module/${rootArtifactid}/${rootArtifactid}.form")
 public class KenyaemropdController {
 	
 	/** Logger for this class and subclasses */

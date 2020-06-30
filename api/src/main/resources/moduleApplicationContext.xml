@@ -30,7 +30,7 @@
         <constructor-arg value="OPD" />
         <constructor-arg value="patientqueueapp/opdQueue.page" />
         <constructor-arg value="kenyaemropd:apps/opd.png" />
-        <constructor-arg value="2000" />
+        <constructor-arg value="2009" />
     </bean>
 
     <!-- Wraps PatientqueuappService methods in DB transactions and OpenMRS interceptors,
