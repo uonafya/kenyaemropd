@@ -28,7 +28,7 @@
     <bean id="kenyaemropd.app.home" factory-bean="kenyacore.appFactoryBean" factory-method="createInstance">
         <constructor-arg value="kenyaemropd.home" />
         <constructor-arg value="OPD" />
-        <constructor-arg value="patientqueueapp/opdQueue.page" />
+        <constructor-arg value="patientqueuapp/opdQueue.page" />
         <constructor-arg value="kenyaemropd:apps/opd.png" />
         <constructor-arg value="2009" />
     </bean>
